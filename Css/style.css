@@ -1,0 +1,41 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Common Css End */
+
+nav{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(217, 207, 226);
+    transform: scale(0) rotate(50deg); 
+    transform-origin: right top;
+    transition: .5s;
+}
+nav.active{
+    transform: scale(1) rotate(0deg);
+}
+nav ul li a{
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+}
+#toggle_menu{
+    font-size: 25px;
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: black;
+    border-radius: 5%;
+}
